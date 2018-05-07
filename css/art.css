@@ -1,0 +1,205 @@
+body {
+  margin:0;
+  padding: 0;
+  background: #ddd;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  overflow-x: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  font-weight: 300;
+}
+
+img {
+  display: block; /* This displays it across the width of the whole screen*/
+  width: 100%; /* of it's container. ATM which is the div tag w/id of card*/
+  height: auto;
+  border-radius: 5px;
+}
+h1 {
+  font-family: 'Jack';
+  color: #2a9fdc;
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #2a9fdc;
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: white;
+}
+
+nav {
+  width: 100%;
+  background: #00316b;
+  position: fixed;
+  z-index: 1000;
+  transition: .4s;
+}
+ul {
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+  text-align: right;
+}
+ul li {
+  list-style: none;
+  display: block;
+  text-align: center;
+  height: 71px;
+  line-height: 72px;
+  background: #00316b;
+  }
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .9em;
+  padding: 30px 20px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+}
+ul li:hover {
+  background: #006ba3;
+  /*background: #e91e63;*/
+}
+.toggle {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background: #00316b;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.5em;
+  transition: .4s;
+}
+.fa-bars {
+}
+.fa-bars:hover {
+  color: #006ba3;
+}
+.active {
+  display: block;
+}
+.notActive {
+  display: none;
+}
+
+#section-1art{
+  padding: 6em 1em 1em 1em;
+  background: #ddd;
+}
+.pictureGrid {
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-gap: 1em;
+}
+.pictureGrid a {
+  background: white;
+  border: 14px solid white;
+}
+.pictureGrid img {
+  transition: .2s;
+  box-sizing: border-box;
+  box-shadow: -2px 3.5px 20px 1px #a5a5a5;
+}
+.pictureGrid img:hover {
+  box-shadow: -2px 3.5px 60px 4px #a5a5a5;
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+/* Footer */
+#footer {
+  padding: 2em;
+  background: #006ba3;
+  color: #bfbfbf;
+  text-align: center;
+}
+#footer div {
+  font-size: .9em;
+}
+#footer a {
+  text-decoration: none;
+  color: #00316b;
+}
+
+
+@media(min-width: 600px) {
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer div:first-child {
+    grid-column: 1/2;
+  }
+}
+
+@media(min-width: 640px) {
+  .pictureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 2em;
+  }
+}
+
+@media(min-width: 736px) {
+  nav {
+    /*align-items: center;
+    text-align: center;
+    justify-content: center;*/
+  }
+  ul {
+    display: inline-block;
+    float: right;
+    padding-right: 70px;
+  }
+  ul li {
+    display: inline-block;
+    background: none;
+  }
+  .toggle {
+    display: none;
+  }
+
+  .pictureGrid {
+    display: grid;
+    grid-gap: 2em;
+  }
+
+  #footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media(min-width: 1000px) {
+
+  .pictureGrid {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: 2em;
+  }
+}
+
+@media(min-width: 1350px) {
+  .pictureGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

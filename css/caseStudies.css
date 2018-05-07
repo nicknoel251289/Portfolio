@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Jack";
+  src: url("Fonts/Jack.ttf");
+}
+@font-face {
+  font-family: "Orb";
+  src: url("Fonts/Orbitron-500.ttf");
+}
+
+body {
+  margin:0;
+  padding: 0;
+  background: white;
+  font-size: 1.1em;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+/*
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Titan One', cursive;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Hind', sans-serif;
+  */
+}
+h1 {
+  font-family: 'Jack';
+  color: #2a9fdc;
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-bottom: .5em;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #2a9fdc;
+  margin: 0;
+}
+img {
+  display: block; /* This displays it across the width of the whole screen*/
+  width: 100%; /* of it's container. ATM which is the div tag w/id of card*/
+  height: auto;
+  transition: .3s;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: white;
+}
+
+nav {
+  width: 100%;
+  background: #00316b;
+  position: fixed;
+  z-index: 1000;
+  transition: .4s;
+}
+ul {
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+  text-align: right;
+}
+ul li {
+  list-style: none;
+  display: block;
+  text-align: center;
+  height: 71px;
+  line-height: 73px;
+  background: #00316b;
+  }
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .9em;
+  padding: 30px 20px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+}
+ul li:hover {
+  background: #006ba3;
+  /*background: #e91e63;*/
+}
+.toggle {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  background: #00316b;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.5em;
+  transition: .4s;
+}
+.fa-bars {
+}
+.fa-bars:hover {
+  color: #006ba3;
+}
+.active {
+  display: block;
+}
+.notActive {
+  display: none;
+}
+
+#section-1 {
+  background: white;
+  padding: 7em 2em;
+  text-align: center;
+  z-index: 100;
+}
+
+.cs1, .cs2 {
+  padding-top: 2.5em;
+  z-index: 100;
+}
+.cs1 img:hover, .cs2 img:hover {
+  transform: scale(1.08);
+  transition: .3s;
+}
+.cs1info, .cs2info {
+  border-bottom: 1px solid #555;
+  z-index: 500;
+}
+.cs1info h2 {
+  color: #fd3600;
+  padding-top: 1em;
+  font-family: 'Orb';
+}
+.cs2info h2 {
+  color: #1baa9b;
+  padding-top: 1em;
+}
+.cs1info p, .cs2info p {
+  text-align: left;
+}
+
+/* Footer */
+#footer {
+  padding: 2em;
+  background: #006ba3;
+  color: #bfbfbf;
+  text-align: center;
+}
+#footer a {
+  text-decoration: none;
+  color: #00316b;
+}
+
+@media(min-width: 600px) {
+
+  #section-1 {
+    grid-template-rows: 100px 1fr .5fr;
+    grid-gap: 1em;
+  }
+  #section-1 h1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .cs1 {
+    grid-column: 2/3;
+    grid-row: 2/3
+  }
+  .cs2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .cs1info {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 0;
+    border-bottom: 0px solid white;
+  }
+  .cs2info {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 0;
+    border-bottom: 0px solid white;
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer div {
+    font-size: .9em;
+  }
+  #footer div:first-child {
+    grid-column: 1/2;
+  }
+}
+
+@media(min-width: 736px) {
+  nav {
+    /*align-items: center;
+    text-align: center;
+    justify-content: center;*/
+  }
+  ul {
+    display: inline-block;
+    float: right;
+    padding-right: 70px;
+  }
+  ul li {
+    display: inline-block;
+    background: none;
+  }
+  .toggle {
+    display: none;
+  }
+
+}
+
+@media(min-width: 750px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: .2fr 4fr 4fr .5fr;
+  }
+
+  #section-1 {
+    padding: 9.2em 0 7em 0;
+  }
+
+  #section-1 h1 {
+    grid-column: 2/4;
+  }
+
+  #section-1 ul {
+    display: flex; /* Aligns the cards on the same row, like floating them all left or like inline-block */
+    justify-content: space-around;
+    padding: 3.5em 0;
+    grid-column: 2/4;
+  }
+
+  #section-1 li {
+    width: 40%;
+  }
+  .cs1info h2, .cs2info h2 {
+    padding-top: 0;
+  }
+
+}
+
+@media(min-width: 1050px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: .5fr 3.3fr 3.3fr .5fr;
+  }
+
+  #section-1 {
+    padding: 10em 0;
+    grid-gap: 2.5em 2em;
+    grid-template-rows: 1fr 4fr 4fr;
+  }
+
+  .cs1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .cs2 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .cs1info {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding-top: 3.5em;
+    padding-right: 5em;
+    border-bottom: 0px solid white;
+    text-align: left;
+  }
+  .cs1info h2 {
+    border-bottom: 4px solid #ff4d1c;
+    padding-bottom: .5em;
+  }
+  .cs1info p {
+    padding-top: 1.5em;
+  }
+  .cs2info {
+    grid-column: 2/3;
+    padding-top: 3.5em;
+    padding-left: 5em;
+    border-bottom: 0px solid white;
+    text-align: right;
+  }
+  .cs2info h2 {
+    border-bottom: 4px solid #1baa9b;
+    padding-bottom: .5em;
+  }
+  .cs2info p {
+    padding-top: 1.5em;
+    text-align: right;
+  }
+}
+
+@media(min-width: 1400px) {
+
+    .grid {
+      grid-template-columns: 1.2fr 2fr 2fr 1.2fr;
+    }
+    #section-1 {
+      padding-top: 11em;
+    }
+
+}
