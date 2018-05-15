@@ -92,6 +92,7 @@ ul li:hover {
   transition: .4s;
 }
 .fa-bars {
+  color: #ffffff;
 }
 .fa-bars:hover {
   color: #006ba3;

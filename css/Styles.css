@@ -51,6 +51,20 @@ body {
     font-family: 'Hind', sans-serif;
     */
 }
+.intro-header h1 {
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Titan One', sans-serif;
+  line-height: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+.intro-header span {
+  font-family: 'Jack';
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: normal;
+}
 h1 {
   font-family: 'Roboto', sans-serif;
   /*color: #2a9fdc;*/
@@ -119,6 +133,8 @@ ul li {
   height: 71px;
   line-height: 71px;
   background: #00316b;
+  border-left: 1px solid #00316b;
+  border-right: 1px solid #00316b;
   }
 ul li a {
   text-decoration: none;
@@ -132,6 +148,7 @@ ul li a {
 ul li:hover {
   background: #006ba3;
   border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   /*background: #e91e63;*/
 }
 .toggle {
@@ -196,23 +213,9 @@ ul li:hover {
   grid-row: 1/2;
   position: relative;
 }
-.intro-header h1 {
-  padding: 0;
-  font-weight: 600;
-  font-family: 'Roboto', sans-serif;
-  font-size: 3.5em;
-  line-height: 1.2em;
-  color: white;
-  letter-spacing: -4px;
-  text-decoration: none;
-}
 
-.intro-header span {
-  font-family: 'Jack';
-  font-size: .9em;
-  font-weight: 400;
-  letter-spacing: normal;
-  text-decoration: underline;
+.intro-header p {
+  color: white;
 }
 
 /*LANDING PAGE SEE MY WORK BUTTON - EASY SCROLL*/
