@@ -40,45 +40,50 @@ body {
   /*
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Titan One', cursive;
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Righteous', cursive;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Alfa Slab One', cursive;
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Hind', sans-serif;
     */
 }
 .intro-header h1 {
   padding: 0;
-  font-weight: 400;
-  font-family: 'Titan One', sans-serif;
-  line-height: 1.2em;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1em;
   color: white;
   text-decoration: none;
+  font-weight: 400;
 }
 .intro-header span {
-  font-family: 'Jack';
+  font-family: 'Playfair Display', serif;
   font-size: 1.1em;
-  font-weight: 400;
   letter-spacing: normal;
+  color: #00316b;
+  font-weight: 900;
+}
+.intro-header h2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 45px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+.underline {
+  text-decoration: underline;
 }
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
   /*color: #2a9fdc;*/
-  color: #555;
+  color: #00316b;
   margin: 0;
   font-size: 2.5em;
   text-align: center;
-  font-weight: 800;
 }
 h2, h3, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;
-  color: #2a9fdc;
+  color: #00316b;
   margin: 0;
-  letter-spacing: 1px;
+  font-weight: 600;
 }
 img {
   display: block; /* This displays it across the width of the whole screen*/
@@ -265,13 +270,12 @@ ul li:hover {
   z-index: 300;
 }
 .cs1info h2 {
-  color: #fd3600;
+  color: #555;
   z-index: 300;
   padding: .5em 0;
-  font-family: 'Orb';
 }
 .cs2info h2 {
-  color: #1baa9b;
+  color: #555;
   z-index: 300;
   padding: .5em 0;
 }
@@ -285,7 +289,7 @@ ul li:hover {
   background: #e2e2e2; /* #97d7b5; */
 }
 #section-2 h1 {
-  color: #2a9fdc;
+  color: #00316b;
   padding: 2.5em 0;
 }
 #section-2 p {
@@ -335,6 +339,7 @@ ul li:hover {
 }
 #section-4 h1 {
   padding-bottom: .5em;
+  color: #00316b;
 }
 #section-4 p {
   padding-bottom: 2em;
@@ -346,36 +351,12 @@ ul li:hover {
   background: #e2e2e2;
   color: #222222;
 }
-#section-4 .box:last-child {
-  background: #2a9fdc;
-  color: white;
-}
-.myFamily {
-  color: white;
-}
-
-.family {
-  grid-template-columns: repeat(4, 1fr);
-  display: grid;
-  grid-column-gap: .5em;
-  padding-top: 1em;
-}
-.family img {
-  width: 100%;
-  border-radius: 50%;
-}
-.members {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column: span 4;
-  padding-top: 1em;
-}
 
 /* Footer */
 #footer {
   padding: 2em;
-  background: #006ba3;
-  color: #bfbfbf;
+  background: white;
+  color: #555;
   text-align: center;
 }
 #footer a {
@@ -393,6 +374,10 @@ ul li:hover {
   .intro {
     grid-template-columns: 1fr 12fr 1fr;
   }
+  .intro-header p {
+    padding: .7em 0;
+    font-size: 1.2em;
+  }
   .desktopimg {
     height: 120%;
     width: auto;
@@ -404,7 +389,6 @@ ul li:hover {
   .mobileimg {
     display: none;
   }
-
   .btn-outline {
     padding: 3em 0;
   }
@@ -491,7 +475,7 @@ ul li:hover {
   ul {
     display: inline-block;
     float: right;
-    padding-right: 70px;
+    padding-right: 105px;
   }
   ul li {
     display: inline-block;
@@ -500,25 +484,8 @@ ul li:hover {
   .toggle {
     display: none;
   }
-
   .intro {
-    grid-template-columns: 1fr 1fr 10fr 70px;
-  }
-  .intro-header {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    position: relative;
-    text-align: right;
-  }
-  .intro-header h1 {
-    font-size: 5em;
-    text-align: right;
-  }
-  .intro-header p {
-    font-size: 1.5em;
-  }
-  .btn-outline {
-    text-align: right;
+    grid-template-columns: 1fr 12fr 1fr;
   }
 
 }
@@ -585,13 +552,41 @@ ul li:hover {
       grid-column: 2/4;
   }
 
-  #section-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+@media(min-width: 950px) {
+
+  .intro {
+    grid-template-columns: .2fr 1fr 455px 130px;
+    top: 20%;
   }
-  #section-4 .see-more-button {
-    padding: 0;
+  .intro-header {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    position: relative;
+    text-align: right;
   }
+  .intro-header h1 {
+    font-size: 5em;
+    text-align: left;
+  }
+  .intro-header span {
+    margin-left: -50px;
+  }
+  .intro-header p {
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .intro-header h2 {
+    text-align: left;
+    top: 90px;
+    font-size: 2em;
+  }
+  .btn-outline {
+    text-align: left;
+    margin-top: -20px;
+  }
+
 }
 
 @media(min-width: 1050px) {
@@ -648,9 +643,6 @@ ul li:hover {
     z-index: 300;
   }
 
-  #section-4 p {
-    padding-bottom: 4em;
-  }
 }
 
 @media(min-width: 1600px) {
