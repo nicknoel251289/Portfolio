@@ -51,7 +51,7 @@ h3 {
   font-weight: initial;
   letter-spacing: 2px;
   color: #222;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 h4 {
   margin: 0;
@@ -60,7 +60,7 @@ h4 {
   font-weight: initial;
   letter-spacing: 2px;
   color: #222;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 img {
@@ -108,7 +108,6 @@ nav {
 }
 .nav-ul li:hover {
   background: #ff7751;
-  border-left: 1px solid #ddd;
   /*background: #e91e63;*/
 }
 
@@ -269,15 +268,16 @@ nav {
 
 #section-6 {
   padding: 0 2em 3em 2em;
-  background: white;
+  background: #272727;
 }
 #section-6 h2 {
-  color: #222;;
+  color: white;
 }
 
 #section-7 {
   padding: 2em 2em;
-  background: white;
+  background: #272727;
+  color: white;
 }
 .mockup-1 img, .mockup-2 img, .mockup-3 img {
   padding-bottom: 2em;
@@ -285,6 +285,7 @@ nav {
 
 #section-8 {
   padding-bottom: 5em;
+  background: #dedede;
 }
 .section-8p2 {
   padding-bottom: 4em;
@@ -337,7 +338,7 @@ nav {
 
   #section-0 {
     display: grid;
-    padding: 1.5em 2em;
+    padding: 4em 2em;
   }
   #section-0 p {
     padding-top: 2em;
@@ -497,7 +498,7 @@ nav {
   }
 
   .pictureGrid, .colorpalette, .results-grid {
-    width: 710px;
+    width: 675px;
     justify-self: center;
     margin: 0 auto;
   }
@@ -540,7 +541,7 @@ nav {
     grid-template-columns: 1fr 1fr;
   }
   #section-1 p, .research-data, .personas-main-paragraph, #section-5 p, .preference-stats, .abtesting, #section-6 p, #section-7 p,  #section-8 p, #section-8 div {
-    width: 750px;
+    width: 675px;
     align-items: center;
     align-self: center;
     align-content: center;
@@ -552,7 +553,7 @@ nav {
   }
 
   .section-2grid {
-    grid-template-columns: 1fr 350px 40px 350px 1fr;
+    grid-template-columns: 1fr 320px 35px 320px 1fr;
     grid-gap: 0;
   }
   .section-2a {
@@ -606,7 +607,7 @@ nav {
 @media(min-width: 1350px) {
 
   #section-0 {
-    grid-template-columns: 1fr 776.38px 485.23px 1fr;
+    grid-template-columns: .8fr 780px 340px 1fr;
   }
   .laptop {
     grid-column: 2/3;
