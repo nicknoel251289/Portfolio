@@ -57,6 +57,16 @@ h4 {
   color: #333;
   text-align: center;
 }
+h5 {
+  margin: 0;
+  padding-bottom: 1em;
+  font-family: 'Anton', sans-serif;
+  font-weight: initial;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  color: #333;
+  text-align: left;
+}
 
 img {
   display: block;
@@ -299,9 +309,6 @@ nav {
 }
 
 /* Persona section */
-.personas-main-paragraph {
-  padding-bottom: 2em;
-}
 .personaPic {
   display: grid;
   grid-row-gap: 1em;
@@ -315,26 +322,56 @@ nav {
 .persona-container {
   display: grid;
   grid-row-gap: 1em;
-  grid-gap: 0;
   border-radius: 10px;
 }
 
+.persona1 {
+  padding-bottom: 3em;
+}
 .personaPic2, .personaPic3 {
   box-shadow: 0 0 17px 1.5px #9a9a9a;
 }
 
-#section-5 p, #section-6 p, #section-7 p {
-  padding-bottom: 2.5em;
+.iteration-p1 {
+  padding-bottom: 2em;
+}
+.iteration-p2 {
+  padding-top: 2em;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em
 }
 .pictureGrid {
   grid-template-columns: 1fr;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: .2em 1em;
   transition: .3s;
+  text-align: center;
 }
 .pictureGrid img {
   box-shadow: 0 0 17px 1.5px #9a9a9a;
 }
+.pg1 {
+
+}
+.pg2 {
+
+}
+.pg3 {
+
+}
+.pg4 {
+
+}
+.pg5 {
+
+}
+
+#section-6 p, #section-7 p {
+  padding-bottom: 2.5em;
+}
+
 .pictureGrid2 {
   grid-template-columns: 1fr;
   display: grid;
@@ -719,7 +756,7 @@ nav {
   .grid {
     grid-template-columns: 1fr 1fr 375px 375px 1fr 1fr;
   }
-  #section-2 p, #section-3 h2, #section-3 p, .initial-research, #sectino-3a p, #section-3a h2, #section-4 h2, #section-4 p, #section-5 h2, #section-5 p, #section-6 h2, #section-6 p, #section-7 h2, #section-7 p {
+  #section-2 p, #section-3 h2, #section-3 p, .initial-research, #sectino-3a p, #section-3a h2, #section-4 h2, #section-4 p, #section-5 h2, #section-5 p, .iteration-p2, #section-6 h2, #section-6 p, #section-7 h2, #section-7 p {
     grid-column: 3/5;
   }
   .researchGrid, .persona-container, .pictureGrid, .pictureGrid2, .conclusiongrid, .viewsitebutton {
