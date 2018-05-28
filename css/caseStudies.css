@@ -89,8 +89,6 @@ ul li {
   height: 71px;
   line-height: 73px;
   background: #00316b;
-  border-left: 1px solid #00316b;
-  border-right: 1px solid #00316b;
   }
 ul li a {
   text-decoration: none;
@@ -103,8 +101,6 @@ ul li a {
 }
 ul li:hover {
   background: #006ba3;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
   /*background: #e91e63;*/
 }
 .toggle {
