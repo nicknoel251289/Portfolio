@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Orb";
-  src: url("Fonts/Orbitron-700.ttf");
-}
-
 body {
   margin:0;
   padding: 0;
@@ -12,64 +7,66 @@ body {
   line-height: 1.6;
   text-align: center;
   overflow-x: hidden;
-  color: #111;
-  /*font-family: 'Amaranth', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-    font-family: 'Passion One', cursive;
-    font-family: 'Changa One', cursive;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Playfair Display', serif;
-    */
 }
+
 main {
   padding: 0;
 }
-h1 {
+h1{
   margin: 0;
-  padding: 2em 0;
-  font-family: 'Orb';
+  padding-bottom: 1.8em;
+  font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
   font-size: 2em;
-  color: #222;
+  color: #333;
+  text-align: center;
 }
 h2 {
   margin: 0;
-  padding: 2em 0;
-  font-family: 'Orb';
+  padding-bottom: 1.3em;
+  font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
-  font-size: 1.6em;
-  color: #222;
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
 }
 h3 {
   margin: 0;
-  padding: 2em 0;
-  font-family: 'Orb';
+  font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
-  color: #222;
-  font-size: 1.4em;
+  font-size: 1.6em;
+  color: #333;
+  text-align: center;
 }
 h4 {
   margin: 0;
-  padding: 2em 0;
-  font-family: 'Orb';
+  font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
-  color: #222;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.4em;
+  color: #333;
 }
+h5 {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: initial;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  color: #333;
+}
+
 img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 3px;
+  transition: .2s;
 }
-div, p {
+
+div {
   margin: 0;
 }
 p {
@@ -78,16 +75,16 @@ p {
 
 nav {
   width: 100%;
-  background: #fe3600;
   position: fixed;
   z-index: 1000;
-  transition: .4s;
+  background: white;
 }
 .nav-ul {
   margin: 0 auto;
   padding: 0;
   display: none;
   text-align: right;
+  border-bottom: 3px solid #ff5526;
 }
 .nav-ul li {
   list-style: none;
@@ -99,16 +96,18 @@ nav {
   }
 .nav-ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-size: .9em;
   padding: 30px 20px;
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0;
 }
 .nav-ul li:hover {
   background: #ff7751;
   /*background: #e91e63;*/
+}
+.nav-ul li a:hover {
+  color: white;
 }
 
 .toggle {
