@@ -18,40 +18,44 @@ h1{
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
-  font-size: 2em;
+  font-size: 2.4em;
   color: #333;
   text-align: center;
+  font-weight: 400;
 }
 h2 {
-  padding-bottom: 1.8em;
+  padding-bottom: 1.7em;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
+  font-size: 2.1em;
+  color: #333;
+  text-align: center;
+  font-weight: 400;
+}
+h3 {
+  padding-bottom: 1em;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.8em;
   color: #333;
   text-align: center;
-}
-h3 {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  font-weight: initial;
-  font-size: 1.6em;
-  color: #333;
-  text-align: center;
+  font-weight: 400;
 }
 h4 {
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  font-weight: initial;
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #333;
+  font-weight: 400;
 }
 h5 {
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  font-weight: initial;
   font-size: 1.2em;
   color: #333;
+  font-weight: 400;
+  text-align: left;
 }
 
 img {
@@ -242,29 +246,49 @@ nav {
   text-align: left;
   list-style: circle;
 }
-#section-5 div {
+#section-5 h4 {
+  text-align: left;
+}
+#section-5 ul {
   text-align: left;
 }
 .pictureGrid {
   padding-bottom: 2em;
+  display: grid;
+  grid-gap: 1em;
+  font-weight: 600;
 }
+.pictureGrid img {
+  padding-top: .5em;
+}
+.pictureGrid1 {
+  padding-bottom: 4em;
+  display: grid;
+  grid-gap: 1em;
+}
+.pictureGrid1 img {
+  padding-top: .5em;
+}
+.wireframe-info {
+  text-align: left;
+  font-weight: 300;
+  padding-top: 2em;
+}
+.wireframe-info h5 {
+  font-weight: 500;
+}
+
 .section-5p1 {
   padding-bottom: 0;
 }
 .section-5p2 {
   padding-bottom: 1em;
 }
-.preference-stats {
-  padding-bottom: 2em;
-}
-.abtesting {
-  padding-bottom: 2em;
-}
 #section-5 p {
   padding-bottom: 3em;
 }
 #section-5 ul li {
-  list-style: circle;
+  list-style: decimal;
 }
 
 #section-6 {
@@ -273,6 +297,9 @@ nav {
 #section-6 p {
   padding-bottom: 3em;
   margin: inherit;
+}
+.colorpalette img {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #section-7 {
@@ -368,9 +395,51 @@ nav {
   #section-5 h2 {
     grid-column: 1/3;
   }
-  .pictureGrid {
-    grid-column: 2/4;
+  .pictureGrid1 {
+    grid-column: 1/3;
     justify-self: center;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .7fr .8fr;
+    grid-row-gap: 3em;
+    margin: 0 auto;
+  }
+  .pictureGrid1 img {
+    padding: 0;
+  }
+  .ffwf1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .wireframe-info1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0;
+  }
+  .ffwf2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .wireframe-info2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: right;
+  }
+  .ffwf3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .wireframe-info3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .pictureGrid {
+    grid-column: 1/3;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
   /* Persona section */
   .persona-container {
@@ -446,6 +515,45 @@ nav {
   }
 }
 
+@media(min-width: 650px) {
+
+  .pictureGrid1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 220px;
+    padding-bottom: 2em;
+  }
+  .ffwf1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .wireframe-info1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .ffwf2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .wireframe-info2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+  }
+  .ffwf3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .wireframe-info3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .abtesting-container {
+    padding-top: 4em;
+  }
+
+}
+
 
 @media(min-width: 736px) {
   nav {
@@ -504,12 +612,6 @@ nav {
     margin: auto;
   }
 
-  .pictureGrid, .colorpalette, .results-grid {
-    width: 675px;
-    justify-self: center;
-    margin: 0 auto;
-  }
-
 }
 
 @media(min-width: 765px) {
@@ -518,7 +620,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #section-1 p, .research-data, .personas-main-paragraph, #section-5 p, .preference-stats, .abtesting, #section-6 p, #section-7 p,  #section-8 p, #section-8 div {
+  #section-1 p, .research-data, .personas-main-paragraph, #section-5 p, #section-5 ul, #section-5 h4, .preference-stats, .abtesting-container, #section-6 p, #section-7 p,  #section-8 p, #section-8 div {
     width: 675px;
     align-items: center;
     align-self: center;
@@ -526,7 +628,7 @@ nav {
     justify-content: center;
     justify-self: center;
   }
-  #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, .pictureGrid, .preference-grid, #section-5 h3, .abtesting, #section-7 div, #section-8 div {
+  #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, .pictureGrid, .preference-grid, #section-5 h3, #section-5 h4, #section-5 ul, .abtesting-container, #section-7 div, #section-8 div {
     grid-column: 1/3;
   }
 
@@ -541,6 +643,12 @@ nav {
     grid-column: 4/5;
   }
 
+}
+
+@media(min-width: 829px) {
+  .pictureGrid1 {
+    grid-template-rows: 1fr 100px;
+  }
 }
 
 @media(min-width: 850px) {
@@ -589,7 +697,16 @@ nav {
     display: grid;
     grid-template-columns: 1fr 530px 530px 1fr;
   }
-  #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, #section-4 h2, .pictureGrid, #section-5 h2, #section-5 h3, .abtesting, .preference-grid, .preference-stats, #section-7 div, #section-8 h2, #section-8 p, #section-8 div {
+  .pictureGrid {
+    grid-gap: 9em;
+  }
+  .pictureGrid, .colorpalette, .results-grid {
+    width: 1060px;
+    justify-self: center;
+    margin: 0 auto;
+  }
+  #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, #section-4 h2, .pictureGrid, .pictureGrid1, #section-5 h2, #section-5 h3, #section-5 h4, #section-5 ul,
+  .abtesting-container, .preference-grid, .preference-stats, #section-7 div, #section-8 h2, #section-8 p, #section-8 div {
     grid-column: 2/4;
   }
 
@@ -603,10 +720,6 @@ nav {
   #section-4 p, #section-5 p, #section-6 p, #section-7 p {
     grid-column: 2/4;
   }
-  #section-5 img {
-    grid-column: 1/5;
-  }
-
 
 }
 
