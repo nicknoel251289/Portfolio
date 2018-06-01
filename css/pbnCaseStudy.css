@@ -344,6 +344,10 @@ nav {
   display: grid;
   grid-gap: 1em;
 }
+.pictureGrid2 div {
+  text-align: center;
+  font-weight: 600;
+}
 .pictureGrid2 img {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -351,6 +355,15 @@ nav {
   transform: scale(1.05);
   transition: .2s;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.row-1-info {
+  text-align: left;
+  margin: 0;
+}
+.row-2-info {
+  padding: 1em 0;
+  text-align: left;
+  margin: 0;
 }
 
 .logo1, .logo2, .logo3, .logo4, .logo5, .logo6 {
@@ -522,6 +535,9 @@ nav {
   }
 
   .pictureGrid, .pictureGrid2, .pictureGrid3, .conclusiongrid {
+    grid-column: 2/4;
+  }
+  .row-1-info, .row-2-info {
     grid-column: 2/4;
   }
   .viewsitebutton {
@@ -789,7 +805,7 @@ nav {
     grid-template-columns: 1fr 1fr 375px 375px 1fr 1fr;
   }
   #section-2 p, #section-3 h2, #section-3 p, .initial-research, #sectino-3a p, #section-3a h2, #section-4 h2, #section-4 p, #section-5 h2, #section-5 p,
-  .iteration-p2, #section-6 h2, #section-6 p, #section-6a h2, #section-6a p, #section-7 h2, #section-7 p {
+  .iteration-p2, #section-6 h2, #section-6 p, #section-6a h2, #section-6a p, .row-1-info, .row-2-info, #section-7 h2, #section-7 p {
     grid-column: 3/5;
   }
   .researchGrid, .persona-container, .viewsitebutton {
