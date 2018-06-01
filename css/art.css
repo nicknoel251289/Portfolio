@@ -1,7 +1,7 @@
 body {
   margin:0;
   padding: 0;
-  background: #ddd;
+  background: white;
   font-size: 1.1em;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -38,15 +38,9 @@ p {
   padding: 0;
 }
 
-a,
-a:hover,
-a:visited {
-  color: white;
-}
-
 nav {
+  background: white;
   width: 100%;
-  background: #00316b;
   position: fixed;
   z-index: 1000;
   transition: .4s;
@@ -56,6 +50,7 @@ ul {
   padding: 0;
   display: none;
   text-align: right;
+  border-bottom: 3px solid #00316b;
 }
 ul li {
   list-style: none;
@@ -67,7 +62,7 @@ ul li {
   }
 ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-size: .9em;
   padding: 30px 20px;
   font-weight: 400;
@@ -75,7 +70,7 @@ ul li a {
   letter-spacing: 0;
 }
 ul li:hover {
-  background: #006ba3;
+  background: #ddd;
   /*background: #e91e63;*/
 }
 .toggle {
@@ -103,7 +98,7 @@ ul li:hover {
 
 #section-1art{
   padding: 6em 1em 1em 1em;
-  background: #ddd;
+  background: white;
 }
 .pictureGrid {
   grid-template-columns: repeat(1, 1fr);
@@ -111,8 +106,9 @@ ul li:hover {
   grid-gap: 1em;
 }
 .pictureGrid a {
-  background: white;
-  border: 14px solid white;
+  background: #ddd;
+  border: 14px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .pictureGrid img {
   transition: .2s;
@@ -128,8 +124,8 @@ ul li:hover {
 /* Footer */
 #footer {
   padding: 2em;
-  background: #006ba3;
-  color: #bfbfbf;
+  background: white;
+  color: #333;
   text-align: center;
 }
 #footer div {
@@ -168,7 +164,7 @@ ul li:hover {
   ul {
     display: inline-block;
     float: right;
-    padding-right: 70px;
+    padding-right: 90px;
   }
   ul li {
     display: inline-block;
