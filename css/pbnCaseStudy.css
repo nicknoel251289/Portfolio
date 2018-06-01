@@ -361,9 +361,12 @@ nav {
   margin: 0;
 }
 .row-2-info {
-  padding: 1em 0;
+  padding: 3em 0 0 0;
   text-align: left;
   margin: 0;
+}
+#section-6 .row-2-p {
+  padding: 0;
 }
 
 .logo1, .logo2, .logo3, .logo4, .logo5, .logo6 {
@@ -639,7 +642,7 @@ nav {
   .nav-ul {
     display: inline-block;
     float: right;
-    padding-right: 150px;
+    padding-right: 90px;
   }
   .nav-ul li {
     display: inline-block;
