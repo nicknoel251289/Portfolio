@@ -17,18 +17,19 @@ body {
   font-weight: 300;
 }
 h1 {
-  font-family: 'Jack';
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  /*color: #2a9fdc;*/
   color: #006ba3;
   margin: 0;
-  font-size: 2em;
-  letter-spacing: 3px;
-  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
 }
 h2, h3, h4, h5, h6 {
-  font-family: 'Jack';
+  font-family: 'Nunito', sans-serif;
   color: #006ba3;
   margin: 0;
-  letter-spacing: 3px;
+  font-weight: 600;
 }
 img {
   display: block; /* This displays it across the width of the whole screen*/
@@ -52,7 +53,6 @@ ul {
   padding: 0;
   display: none;
   text-align: right;
-  border-bottom: 3px solid #00316b;
 }
 ul li {
   list-style: none;
@@ -112,9 +112,6 @@ iframe {
   padding-top: 7em;
 }
 #section-1 h1 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 3em;
-  color: #2a9fdc;
   grid-row: 1/2;
   padding-bottom: 1em;
 }

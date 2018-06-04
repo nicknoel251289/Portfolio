@@ -14,7 +14,6 @@ main {
 }
 h1{
   margin: 0;
-  padding-bottom: 1.8em;
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
@@ -24,7 +23,7 @@ h1{
   font-weight: 400;
 }
 h2 {
-  padding-bottom: 1.7em;
+  padding-bottom: .5em;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
@@ -73,11 +72,7 @@ p {
   text-align: left;
   margin: 0;
 }
-ul {
-  padding-top: .5em;
-  padding-bottom: 2em;
-  margin: 0;
-}
+
 nav {
   width: 100%;
   position: fixed;
@@ -89,7 +84,6 @@ nav {
   padding: 0;
   display: none;
   text-align: right;
-  border-bottom: 3px solid #ff5526;
 }
 .nav-ul li {
   list-style: none;
@@ -142,6 +136,19 @@ nav {
   padding: 0 2em;
 }
 
+#section-0 {
+  padding: 0 2em;
+}
+#section-0 img {
+  padding: 7em 0 3em 0;
+}
+#section-0 .intro-info {
+
+}
+#section-0 .intro-button {
+  padding: 4em 0;
+}
+
 /*Seperating sections with background color */
 #section-1 {
   background: #222;
@@ -161,7 +168,7 @@ nav {
 }
 
 /*Padding and seperating sections evenly */
-#section-0, #section-1, #section-2, #section-3, #section-3a, #section-4, #section-5, #section-6, #section-7 {
+#section-1, #section-2, #section-3, #section-3a, #section-4, #section-5, #section-6, #section-7 {
   padding: 4em 2em;
   text-align: center;
 }
@@ -170,19 +177,6 @@ nav {
   text-align: center;
 }
 
-#section-0 {
-  padding: 4em 2em;
-  height: 100vh;
-}
-#section-0 h1 {
-  font-size: 2.5em;
-  color: #fe3600;
-  position: relative;
-  top: .5em;
-}
-#section-0 p {
-  padding: 2em 0 3em 0;
-}
 .viewsite {
   padding: 1em 2.5em;
   text-decoration: none;
@@ -215,6 +209,9 @@ nav {
 
 .section-2b p, .section-2b ul {
   text-align: left;
+}
+.my-role-p {
+  padding-bottom: 2em;
 }
 .objective-list li {
   text-align: left;
@@ -369,14 +366,6 @@ nav {
     text-align: left;
   }
 
-  #section-0 {
-    display: grid;
-    padding: 4em 2em;
-  }
-  #section-0 p {
-    padding-top: 2em;
-  }
-
   #section-3 h2 {
     grid-column: 2/4;
   }
@@ -515,7 +504,6 @@ nav {
   .abtesting-container {
     padding-top: 4em;
   }
-
 }
 
 
@@ -537,39 +525,31 @@ nav {
   .toggle {
     display: none;
   }
+
+  #section-0 {
+    display: grid;
+    grid-template-columns: 1fr .7fr;
+    grid-template-rows: 142px 1fr 170px;
+    grid-column-gap: 1em;
+  }
+  #section-0 img {
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+  }
+  #section-0 .intro-info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+  }
+  #section-0 .intro-button {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
 }
 
 @media(min-width: 760px) {
-
-  #section-0 {
-    grid-template-columns: 8fr 5fr;
-    grid-template-rows: .2fr .5fr;
-    grid-column-gap: 1em;
-    height: 100vh;
-  }
-  .laptop {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding-top: 3em;
-  }
-  #section-0 h1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    text-align: left;
-    padding-top: 1em;
-  }
-  #section-0 p {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-top: 7.5em;
-  }
-  #section-0 div {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    position: relative;
-    top: 15.5em;
-    justify-self: left;
-  }
 
   #section-6 p {
     grid-row: 2/4;
@@ -647,16 +627,17 @@ nav {
 @media(min-width: 1100px) {
 
   #section-0 {
-    padding-top: 7em;
-  }
-  .laptop {
-    padding: 0;
+    height: 100vh;
   }
 
 }
 
 @media(min-width: 1150px) {
 
+  #section-0 {
+    width: 1060px;
+    margin: 0 auto;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 530px 530px 1fr;
@@ -689,22 +670,5 @@ nav {
 
 
 @media(min-width: 1350px) {
-
-  #section-0 {
-    grid-template-columns: .8fr 780px 340px 1fr;
-  }
-  .laptop {
-    grid-column: 2/3;
-  }
-  #section-0 h1 {
-    grid-column: 3/4;
-  }
-  #section-0 p {
-    grid-column: 3/4;
-  }
-  #section-0 div {
-    grid-column: 3/4;
-  }
-
 
 }

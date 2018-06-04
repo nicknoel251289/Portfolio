@@ -20,18 +20,19 @@ img {
   border-radius: 5px;
 }
 h1 {
-  font-family: 'Jack';
-  color: #2a9fdc;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  /*color: #2a9fdc;*/
+  color: #006ba3;
   margin: 0;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
-  letter-spacing: 2px;
-  font-weight: 400;
 }
 h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #2a9fdc;
+  font-family: 'Nunito', sans-serif;
+  color: #006ba3;
   margin: 0;
+  font-weight: 600;
 }
 p {
   margin: 0;
@@ -50,7 +51,6 @@ ul {
   padding: 0;
   display: none;
   text-align: right;
-  border-bottom: 3px solid #00316b;
 }
 ul li {
   list-style: none;
