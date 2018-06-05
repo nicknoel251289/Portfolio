@@ -105,7 +105,7 @@ nav {
   letter-spacing: 0;
 }
 .nav-ul li:hover {
-  background: #333;
+  background: #dddddd;
   /*background: #e91e63;*/
 }
 .nav-ul li a:hover {
@@ -140,12 +140,12 @@ nav {
 
 #section-0 {
   padding: 0 2em;
+  height: 100vh;
 }
 #section-0 img {
   padding: 7em 0 3em 0;
 }
 #section-0 .intro-info {
-
 }
 #section-0 .intro-button {
   padding: 4em 0;
@@ -185,7 +185,7 @@ nav {
   border: 1px solid #555;
   border-radius: 3px;
   font-weight: bold;
-  color: black;
+  color: #333;
   background: #fe3600;
 }
 .viewsite:hover {
@@ -240,7 +240,10 @@ nav {
 }
 .persona1, .persona2 {
   background: white;
-  box-shadow: -1px 2px 12px 2px #b7b7b7;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.persona1 img, .persona2 img {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .persona-info {
   padding: 1em;
@@ -261,6 +264,7 @@ nav {
 }
 .pictureGrid img {
   padding-top: .5em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .pictureGrid1 {
   padding-bottom: 4em;
@@ -269,6 +273,7 @@ nav {
 }
 .pictureGrid1 img {
   padding-top: .5em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .wireframe-info {
   text-align: left;
@@ -290,6 +295,9 @@ nav {
 }
 #section-5 ul li {
   list-style: decimal;
+}
+.ffwf1 img, .ffwf2 img, .ffwf3 img{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #section-6 {
@@ -647,14 +655,6 @@ nav {
   .toggle {
     display: none;
   }
-}
-
-@media(min-width: 1100px) {
-
-  #section-0 {
-    height: 100vh;
-  }
-
 }
 
 @media(min-width: 1150px) {
