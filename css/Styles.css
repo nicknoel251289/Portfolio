@@ -117,6 +117,7 @@ nav {
   position: fixed;
   z-index: 1000;
   transition: .4s;
+  border-bottom: 1px solid #005079;
 }
 ul {
   margin: 0 auto;
@@ -149,7 +150,7 @@ ul li:hover {
   display: block;
   width: 100%;
   padding: 16px 20px;
-  background: #00316b;
+  background: #006ba3;
   text-align: right;
   box-sizing: border-box;
   color: #fff;
@@ -178,7 +179,7 @@ ul li:hover {
   grid-column: 2/3;
   border-radius: 50%;
   position: relative;
-  top: 120px;
+  top: 100px;
 }
 .desktopimg {
   display: none;
@@ -188,15 +189,15 @@ ul li:hover {
 #header {
   margin: 0;
   text-align: center;
-  height: 640px;
+  height: 100vh;
   background: #2a9fdc;
 }
 
 /*INTODUCTION MAIN PAGE*/
 .intro {
-  position: absolute;
   text-align: center;
-  top: 45%;
+  position: relative;
+  top: 5em;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 320px 1fr;
@@ -219,6 +220,7 @@ ul li:hover {
   padding: 6em 0 2em 0;
   grid-column: 2/3;
   grid-row: 3/4;
+  display: none;
 }
 .btn-outline a{
   padding: 1em 3em;
@@ -357,11 +359,12 @@ ul li:hover {
 @media(min-width: 600px) {
 
   #header {
-    height: 100vh;
     background: none;
   }
   .intro {
     grid-template-columns: 1fr 12fr 1fr;
+    position: absolute;
+    top: 32%;
   }
   .intro-header p {
     padding: .7em 0;
@@ -399,7 +402,6 @@ ul li:hover {
     grid-column-gap: 1em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 2em 0;
   }
   .cs1 {
     grid-column: 1/2;
@@ -477,30 +479,25 @@ ul li:hover {
 }
 
 @media(min-width: 736px) {
-  nav {
-    /*align-items: center;
-    text-align: center;
-    justify-content: center;*/
-  }
-  ul {
-    display: inline-block;
-    float: right;
-    padding-right: 90px;
-  }
-  ul li {
-    display: inline-block;
-    background: none;
-  }
-  .toggle {
-    display: none;
-  }
-  .intro {
-    grid-template-columns: 1fr 12fr 1fr;
-  }
+
 
 }
 
 @media(min-width: 750px) {
+
+  .intro {
+    top: 20%;
+  }
+  .intro-header h1 {
+    font-size: 5em;
+  }
+  .intro-header p {
+    font-size: 1.5em;
+  }
+  .intro-header h2 {
+    font-size: 2em;
+    top: 90px;
+  }
 
   #section-1 h1 {
     grid-column: 2/4;
@@ -509,7 +506,6 @@ ul li:hover {
     grid-column: 2/4;
     margin: auto;
   }
-
   #section-1 .see-more-button {
       grid-column: 2/4;
   }
@@ -550,11 +546,10 @@ ul li:hover {
 
 }
 
-@media(min-width: 950px) {
+@media(min-width: 850px) {
 
   .intro {
     grid-template-columns: .2fr 1fr 455px 130px;
-    top: 20%;
   }
   .intro-header {
     grid-column: 3/4;
@@ -581,6 +576,24 @@ ul li:hover {
   .btn-outline {
     text-align: left;
     margin-top: -20px;
+  }
+}
+
+@media(min-width: 950px) {
+  nav {
+    text-align: none;
+  }
+  ul {
+    float: right;
+    padding-right: 100px;
+    display: inline-block;
+  }
+  ul li {
+    display: inline-block;
+    background: none;
+  }
+  .toggle {
+    display: none;
   }
 
   .case-studies-container {

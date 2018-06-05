@@ -40,11 +40,12 @@ p {
 }
 
 nav {
-  background: white;
+  background: #dddddd;
   width: 100%;
   position: fixed;
   z-index: 1000;
   transition: .4s;
+  border-bottom: 1px solid #d1d1d1;
 }
 ul {
   margin: 0 auto;
@@ -58,7 +59,7 @@ ul li {
   text-align: center;
   height: 71px;
   line-height: 72px;
-  background: #00316b;
+  background: #d1d1d1;
   }
 ul li a {
   text-decoration: none;
@@ -70,21 +71,22 @@ ul li a {
   letter-spacing: 0;
 }
 ul li:hover {
-  background: #ddd;
+  background: white;
   /*background: #e91e63;*/
 }
 .toggle {
   display: block;
   width: 100%;
   padding: 22.5px 20px;
-  background: #00316b;
+  background: #dddddd;
   text-align: right;
   box-sizing: border-box;
-  color: #fff;
+  color: #dddddd;
   font-size: 1.5em;
   transition: .4s;
 }
 .fa-bars {
+  color: black;
 }
 .fa-bars:hover {
   color: #006ba3;
@@ -156,23 +158,6 @@ ul li:hover {
 }
 
 @media(min-width: 736px) {
-  nav {
-    /*align-items: center;
-    text-align: center;
-    justify-content: center;*/
-  }
-  ul {
-    display: inline-block;
-    float: right;
-    padding-right: 90px;
-  }
-  ul li {
-    display: inline-block;
-    background: none;
-  }
-  .toggle {
-    display: none;
-  }
 
   .pictureGrid {
     display: grid;
@@ -185,7 +170,22 @@ ul li:hover {
 
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 950px) {
+  nav {
+    text-align: none;
+  }
+  ul {
+    float: right;
+    padding-right: 100px;
+    display: inline-block;
+  }
+  ul li {
+    display: inline-block;
+    background: none;
+  }
+  .toggle {
+    display: none;
+  }
 
   .pictureGrid {
     grid-template-columns: repeat(3, 1fr);
@@ -193,6 +193,7 @@ ul li:hover {
     grid-gap: 2em;
   }
 }
+
 
 @media(min-width: 1350px) {
   .pictureGrid {
