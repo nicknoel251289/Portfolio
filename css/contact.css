@@ -42,7 +42,7 @@ p {
 }
 
 nav {
-  background: #dddddd;
+  background: white;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -73,14 +73,14 @@ ul li a {
   letter-spacing: 0;
 }
 ul li:hover {
-  background: white;
+  background: #dddddd;
   /*background: #e91e63;*/
 }
 .toggle {
   display: block;
   width: 100%;
   padding: 22.5px 20px;
-  background: #dddddd;
+  background: white;
   text-align: right;
   box-sizing: border-box;
   color: #dddddd;

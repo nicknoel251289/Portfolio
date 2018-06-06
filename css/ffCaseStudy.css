@@ -313,7 +313,7 @@ nav {
 
 #section-7 {
   background: #ddd;
-  color: white;
+  color: #333;
 }
 .mockup-1 img, .mockup-2 img, .mockup-3 img {
   padding-bottom: 2em;
@@ -328,9 +328,11 @@ nav {
 }
 .section-8p1 {
   padding-bottom: 3.2em;
+  margin: 0 auto;
 }
 .section-8p2 {
   padding-bottom: 4.5em;
+  margin: 0 auto;
 }
 
 /* Next and Last button */
@@ -596,7 +598,7 @@ nav {
 
 @media(min-width: 829px) {
   .pictureGrid1 {
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 1fr;
   }
 }
 
