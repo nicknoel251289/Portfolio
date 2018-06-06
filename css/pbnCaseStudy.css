@@ -19,7 +19,6 @@ main {
 }
 h1{
   margin: 0;
-  padding-bottom: 1.8em;
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
   letter-spacing: 1px;
@@ -28,6 +27,7 @@ h1{
   text-align: center;
 }
 h2 {
+  padding-bottom: .2em;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: initial;
@@ -65,7 +65,10 @@ img {
   border-radius: 3px;
   transition: .2s;
 }
-
+p {
+  text-align: left;
+  margin: 0;
+}
 div {
   margin: 0;
 }
@@ -800,10 +803,9 @@ nav {
   .aboutbg {
     grid-column: 1/5;
   }
-
 }
 
-@media(min-width: 1350px) {
+@media(min-width: 1150px) {
   #section-0 {
     width: 1060px;
     margin: 0 auto;
