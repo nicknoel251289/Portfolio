@@ -278,8 +278,8 @@ i {
   text-decoration: none;
   color: #00316b;
 }
-@media (min-width: 600px) {
 
+@media (min-width: 600px) {
   #footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -290,7 +290,6 @@ i {
   #footer div:first-child {
     grid-column: 1/2;
   }
-
 }
 
 @media(min-width: 950px) {
