@@ -97,13 +97,18 @@ ul li:hover {
 
 #section-1 {
   position: relative;
-  top: 150px;
+  top: 100px;
   padding: 0 2em;
   text-align: left;
+  padding: 4em 0;
+}
+#section-1 h2 {
+  text-align: center;
 }
 .about_me_paragraph {
   max-width: 720px;
   margin: 0 auto;
+  padding: 0 2em;
 }
 
 /*SEE MORE BUTTON*/
