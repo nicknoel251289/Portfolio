@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var lastPosition = 0;
 
-  $(document).scroll(function() {
+  /*$(document).scroll(function() {
       var position = $(this).scrollTop();
       var caseStudy = $('#section-1').position();
       var caseStudyY = caseStudy.top - 400;
@@ -44,7 +44,7 @@ $(document).ready(function(){
         $('div.sideNav > a').animate({height: '0px'},10);
       }*/
 
-      lastPosition = position;
+      /*lastPosition = position;
 
       var sectionOne = $('#section-1').position();
       noNav = sectionOne.top;
@@ -55,7 +55,7 @@ $(document).ready(function(){
           $('.nav').css('display', 'grid');
         }*/
 
-  });
+  /*});*/
 
     $('.menu').click(function(){
         $('ul').toggleClass('active');
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 
 
-  $(window).resize(function(){
+  /*$(window).resize(function(){
     var windowWidth = $(this).innerWidth();
     console.log(windowWidth);
     if (windowWidth < 750) {
@@ -112,7 +112,7 @@ $(document).ready(function(){
       $('.nav').css('display', 'none');
     } else if (windowInnerWidth > 811){
       $('.nav').css('display', 'block');
-    }
+    }*/
 
 
 });

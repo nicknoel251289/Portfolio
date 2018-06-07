@@ -398,6 +398,10 @@ nav {
   #section-5 h2 {
     grid-column: 1/3;
   }
+  #section-5 h5 {
+    grid-column: 1/3;
+  }
+
   .pictureGrid1 {
     grid-column: 1/3;
     justify-self: center;
@@ -462,7 +466,7 @@ nav {
     grid-column: 2/3;
   }
 
-  .personas-main-paragraph, .personas-main-header, #section-5 h2, #section-5 p, .preference-stats, #section-6 h2, #section-6 p, #section-7 h2, #section-7 p, #section-8 h2, #section-8 p {
+  .personas-main-paragraph, .personas-main-header, #section-5 p, .preference-stats, #section-6 h2, #section-6 p, #section-7 h2, #section-7 p, #section-8 h2, #section-8 p {
     grid-column: 1/3;
   }
 
@@ -571,7 +575,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #section-1 p, .research-data, .personas-main-paragraph, #section-5 p, #section-5 ul, #section-5 h4, .preference-stats, .abtesting-container, #section-6 p, #section-7 p,  #section-8 p, #section-8 div {
+  #section-1 p, .research-data, .personas-main-paragraph, #section-5 p, #section-5 h4, .preference-stats, .abtesting-container, #section-6 p, #section-7 p,  #section-8 p, #section-8 div {
     width: 675px;
     align-items: center;
     align-self: center;
@@ -580,6 +584,12 @@ nav {
     justify-self: center;
   }
   #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, .pictureGrid, .preference-grid, #section-5 h3, #section-5 h4, #section-5 ul, .abtesting-container, #section-7 div, #section-8 div {
+    grid-column: 1/3;
+  }
+  .section-5-ul {
+    width: 675px;
+    text-align: left;
+    margin: 0 auto;
     grid-column: 1/3;
   }
 
@@ -678,7 +688,7 @@ nav {
     margin: 0 auto;
   }
   #section-1 h2, #section-1 p, #section-3 h2, #section-3 div, #section-4 h2, .pictureGrid, .pictureGrid1, #section-5 h2, #section-5 h3, #section-5 h4, #section-5 ul,
-  .abtesting-container, .preference-grid, .preference-stats, #section-7 div, #section-8 h2, #section-8 p, #section-8 div {
+  .section-5-ul, .abtesting-container, .preference-grid, .preference-stats, #section-7 div, #section-8 h2, #section-8 p, #section-8 div {
     grid-column: 2/4;
   }
 
