@@ -2,7 +2,9 @@
   font-family: "Jack";
   src: url("Fonts/Jack.ttf");
 }
-
+main {
+  height: 100vh;
+}
 body {
   margin:0;
   padding: 0;
@@ -13,7 +15,6 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow-x: hidden;
-  max-height: 100%;
   font-weight: 300;
 }
 h1 {

@@ -143,12 +143,12 @@ nav {
   height: 100vh;
 }
 #section-0 img {
-  padding: 7em 0 3em 0;
+  padding: 6em 0 2em 0;
 }
 #section-0 .intro-info {
 }
 #section-0 .intro-button {
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
 /*Seperating sections with background color */
@@ -447,6 +447,10 @@ nav {
 
 @media(min-width: 600px) {
 
+  #section-0 {
+    height: max-content;
+  }
+
   .rp3 {
     grid-column: 1/2;
   }
@@ -532,6 +536,7 @@ nav {
     grid-template-columns: 1fr .7fr;
     grid-template-rows: 142px 1fr 170px;
     grid-column-gap: 1em;
+    height: 100vh;
   }
   #section-0 img {
     padding: 0;
