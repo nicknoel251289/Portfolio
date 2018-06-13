@@ -110,10 +110,17 @@ ul li:hover {
   margin: 0 auto;
   padding: 0 2em;
 }
-
 .about_me_paragraph p:first-of-type {
   font-size: 1.5em;
   line-height: 35px;
+}
+.graduation {
+  width: 180px;
+  height: auto;
+  float: left;
+  padding-right: 20px;
+}
+.adjust {
 }
 
 /*SEE MORE BUTTON*/
