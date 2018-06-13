@@ -2,15 +2,12 @@
   font-family: "Jack";
   src: url("Fonts/Jack.ttf");
 }
-main {
-  height: 100vh;
-}
 body {
   margin:0;
   padding: 0;
   background: white;
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.4;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -123,6 +120,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 330px 1fr;
   grid-template-rows: 70px 70px 70px 70px 220px 70px;
+  padding-bottom: 2em;
 }
 input, textarea {
   padding: 12px;
@@ -180,44 +178,43 @@ input, textarea {
 .myInfo {
   display: grid;
   grid-template-columns: 1fr 55px 245px 1fr;
-  grid-template-rows: 80px 80px 80px 260px 80px;
+  grid-template-rows: 65px 65px 65px 100px 65px;
   grid-row: 3/4;
   text-align: left;
 }
 .fa-map-marker-alt {
   grid-column: 2/3;
   grid-row: 1/2;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .myLocation {
   grid-column: 3/4;
   grid-row: 1/2;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .fa-envelope {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .myEmail {
   grid-column: 3/4;
   grid-row: 2/3;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .fa-phone {
   grid-column: 2/3;
   grid-row: 3/4;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .myNumber {
   grid-column: 3/4;
   grid-row: 3/4;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .myInfo p {
   grid-column: 2/4;
   grid-row: 4/5;
-  font-size: 1.2em;
   padding: 0;
 }
 .medias {
@@ -233,13 +230,13 @@ i {
   color: #006ba3;
 }
 .github {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .ig {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .linkedin {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /*THANK YOU DIV*/
@@ -306,11 +303,12 @@ i {
   .formgrid {
     grid-column: 2/3;
     grid-row: 2/3;
+    padding-bottom: 0;
   }
   .myInfo {
     grid-column: 3/4;
     grid-row: 2/3;
-    grid-template-rows: 90px 75px 75px 230px 75px;
+    grid-template-rows: 65px 65px 65px 70px 65px;
   }
   .medias {
     padding-top: 2em;
