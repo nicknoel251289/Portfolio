@@ -168,8 +168,8 @@ ul li:hover {
 
 @media(min-width: 950px) {
   nav {
+    text-align: none;
     /*align-items: center;
-    text-align: center;
     justify-content: center;*/
   }
   ul {

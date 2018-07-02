@@ -102,7 +102,7 @@ ul li:hover {
 #section_1 {
   display: grid;
   grid-template-columns: 2em 1fr 2em;
-  grid-template-rows: 150px 1fr 1fr 70px;
+  grid-template-rows: 150px .3fr 1fr 70px;
 }
 .project_container {
   grid-column: 2/3;
@@ -150,6 +150,13 @@ ul li:hover {
 
 
 @media(min-width: 600px) {
+
+  #section_1 {
+    display: grid;
+    grid-template-columns: 2em 1fr 2em;
+    grid-template-rows: 150px .6fr 1fr 70px;
+  }
+
   #footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
