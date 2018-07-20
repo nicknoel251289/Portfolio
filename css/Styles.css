@@ -1,33 +1,3 @@
-@font-face {
-  font-family: "Painter";
-  src: url("Fonts/Painter_PERSONAL_USE_ONLY.ttf");
-}
-@font-face {
-  font-family: "Ocean";
-  src: url("Fonts/Ocean.ttf");
-}
-@font-face {
-  font-family: "Jack";
-  src: url("Fonts/Jack.ttf");
-}
-@font-face {
-  font-family: "hotpizza";
-  src: url("Fonts/hotpizza.ttf");
-}
-@font-face {
-  font-family: "BB";
-  src: url("Fonts/BeckerBlackNF.ttf");
-}
-@font-face {
-  font-family: "Blitz";
-  src: url("Fonts/MinstrelPosterNF.ttf");
-}
-@font-face {
-  font-family: "Orb";
-  src: url("Fonts/Orbitron-500.ttf");
-}
-
-
 body {
   margin:0;
   padding: 0;
@@ -241,36 +211,31 @@ ul li:hover {
 #section-1 h1 {
   padding: 2em 0 .5em 0;
 }
-.cs1, .cs2 {
+.cs1, .cs2, .cs3, .cs4 {
   z-index: 100;
 }
-.cs1 img, .cs2 img {
+.cs1 img, .cs2 img, .cs3 img, .cs4 img {
   transition: .2s;
   z-index: 100;
 }
-.cs2 img {
+.cs2 img, .cs3 img, .cs4 img {
   padding-top: 2em;
 }
-.cs1 img:hover, .cs2 img:hover {
+.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs3 img:hover {
   transform: scale(1.1);
   transition: .2s;
   z-index: 100;
 }
-.cs1info, .cs2info {
+.cs1info, .cs2info, .cs3info, .cs4info {
   border-bottom: 1px solid #555;
   z-index: 300;
 }
-.cs1info h2 {
+.cs1info h2, .cs2info h2, .cs3info h2, .cs4info h2 {
   color: #555;
   z-index: 300;
   padding: .5em 0;
 }
-.cs2info h2 {
-  color: #555;
-  z-index: 300;
-  padding: .5em 0;
-}
-.cs1p, .cs2p {
+.cs1p, .cs2p, .cs3p, .cs4p {
   padding-bottom: 1.5em;
 }
 
@@ -399,9 +364,10 @@ ul li:hover {
   .case-studies-container {
     display: grid;
     grid-row-gap: 2em;
-    grid-column-gap: 1em;
+    grid-column-gap: 3em;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 8em 1em 2em 1em;
   }
   .cs1 {
     grid-column: 1/2;
@@ -410,8 +376,20 @@ ul li:hover {
     align-self: center;
   }
   .cs2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 2/3;
+    padding-top: 0;
+    align-self: center;
+  }
+  .cs3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-top: 0;
+    align-self: center;
+  }
+  .cs4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
     padding-top: 0;
     align-self: center;
   }
@@ -420,31 +398,41 @@ ul li:hover {
     grid-row: 1/2;
     border-bottom: 0px solid white;
   }
-  .cs1info h2 {
+  .cs2info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-bottom: 0px solid white;
+  }
+  .cs3info {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border-bottom: 0px solid white;
+  }
+  .cs4info {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border-bottom: 0px solid white;
+  }
+
+  .cs1info h2, .cs3info h2 {
     grid-column: 3/4;
     text-align: left;
     padding: 0;
   }
-  .cs2info {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    border-bottom: 0px solid white;
-  }
-  .cs2info h2{
+  .cs2info h2, .cs4info h2{
     grid-column: 2/3;
-    text-align: right;
+    text-align: left;
     padding: 0;
   }
-  .cs1info p{
+  .cs1info p, .cs2info p, .cs3info p, .cs4info p {
     text-align: left;
     z-index: 300;
   }
-  .cs2info p {
-    text-align: right;
-    z-index: 300;
-  }
-  .cs2 img {
+  .cs1 img, .cs2 img, .cs3 img, .cs4 img {
     padding: 0;
+  }
+  .cs1p, .cs2p, .cs3p, .cs4p {
+    padding-bottom: 0;
   }
 
   .art-grid {
@@ -476,11 +464,6 @@ ul li:hover {
   #footer div:first-child {
     grid-column: 1/2;
   }
-}
-
-@media(min-width: 736px) {
-
-
 }
 
 @media(min-width: 750px) {
@@ -599,12 +582,6 @@ ul li:hover {
   .case-studies-container {
     grid-row-gap: 3em;
   }
-  .cs1info {
-    padding-right: 2em;
-  }
-  .cs2info {
-    padding-left: 2em;
-  }
 
 }
 
@@ -621,23 +598,49 @@ ul li:hover {
     grid-row: 1/2;
     padding-top: 0;
   }
+  .cs2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding-top: 0;
+  }
+  .cs3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-top: 0;
+  }
+  .cs4 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    padding-top: 0;
+  }
   .cs1info {
     grid-column: 3/4;
     grid-row: 1/2;
     padding-right: 5em;
     border-bottom: 0px solid white;
   }
-  .cs2 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    padding-top: 0;
-  }
   .cs2info {
     grid-column: 2/3;
     grid-row: 2/3;
     padding-left: 5em;
     border-bottom: 0px solid white;
-}
+  }
+  .cs3info {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding-right: 5em;
+    border-bottom: 0px solid white;
+  }
+  .cs4info {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding-left: 5em;
+    border-bottom: 0px solid white;
+  }
+
+  .cs2info h2, .cs4info h2, .cs2info p, .cs4info p {
+    text-align: right;
+  }
 
   #section-2, #section-3 {
     grid-template-columns: 1fr 360px 360px 1fr;

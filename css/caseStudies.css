@@ -133,31 +133,31 @@ ul li:hover {
 .case-studies-container {
     padding: 8em 0 2em 0;
 }
-.cs0, .cs1, .cs2 {
+.cs1, .cs2, .cs3, .cs4 {
   z-index: 100;
 }
-.cs0 img, .cs1 img, .cs2 img {
+.cs1 img, .cs2 img, .cs3 img, .cs4 img {
   transition: .2s;
   z-index: 100;
 }
-.cs1 img, .cs2 img {
+.cs1 img, .cs2 img, .cs3 img, .cs4 img {
   padding-top: 2em;
 }
-.cs0 img:hover, .cs1 img:hover, .cs2 img:hover {
+.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs4 img:hover {
   transform: scale(1.1);
   transition: .2s;
   z-index: 100;
 }
-.cs0info, .cs1info, .cs2info {
+.cs1info, .cs2info, .cs3info, .cs4info {
   border-bottom: 1px solid #555;
   z-index: 300;
 }
-.cs0info h2, .cs1info h2, .cs2info h2 {
+.cs1info h2, .cs2info h2, .cs3info h2, .cs4info h2 {
   color: #555;
   z-index: 300;
   padding: .5em 0;
 }
-.cs0p, .cs1p, .cs2p {
+.cs1p, .cs2p, .cs3p, .cs4p {
   padding-bottom: 1.5em;
 }
 
@@ -189,70 +189,75 @@ ul li:hover {
   .case-studies-container {
     display: grid;
     grid-row-gap: 2em;
-    grid-column-gap: 1em;
+    grid-column-gap: 3em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-  }
-  .cs0 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    padding: 8em 1em 2em 1em;
   }
   .cs1 {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
     padding-top: 0;
     align-self: center;
   }
   .cs2 {
-    grid-column: 2/3;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 0;
+    align-self: center;
+  }
+  .cs3 {
+    grid-column: 1/2;
     grid-row: 3/4;
     padding-top: 0;
     align-self: center;
   }
-  .cs0info {
+  .cs4 {
     grid-column: 1/2;
+    grid-row: 4/5;
+    padding-top: 0;
+    align-self: center;
+  }
+
+  .cs1info {
+    grid-column: 2/3;
     grid-row: 1/2;
     border-bottom: 0px solid white;
   }
-  .cs1info {
+  .cs2info {
     grid-column: 2/3;
     grid-row: 2/3;
     border-bottom: 0px solid white;
   }
-  .cs2info {
-    grid-column: 1/2;
+  .cs3info {
+    grid-column: 2/3;
     grid-row: 3/4;
     border-bottom: 0px solid white;
   }
-  .cs0info h2 {
+  .cs4info {
     grid-column: 2/3;
-    text-align: right;
+    grid-row: 4/5;
+    border-bottom: 0px solid white;
+  }
+  .cs1info h2, .cs3info h2 {
+    grid-column: 2/3;
+    text-align: left;
     padding: 0;
   }
-  .cs1info h2 {
+  .cs2info h2, .cs4info h2 {
     grid-column: 3/4;
     text-align: left;
     padding: 0;
   }
-  .cs2info h2{
-    grid-column: 2/3;
-    text-align: right;
-    padding: 0;
-  }
-  .cs0info p {
-    text-align: right;
-    z-index: 300;
-  }
-  .cs1info p{
+  .cs1info p, .cs2info p, .cs3info p, .cs4info p {
     text-align: left;
     z-index: 300;
   }
-  .cs2info p {
-    text-align: right;
-    z-index: 300;
-  }
-  .cs2 img {
+  .cs1 img, .cs2 img, .cs3 img, .cs4 img {
     padding: 0;
+  }
+  .cs1p, .cs2p, .cs3p, .cs4p {
+    padding-bottom: 0;
   }
 
 
@@ -289,12 +294,6 @@ ul li:hover {
   .case-studies-container {
     grid-row-gap: 3em;
   }
-  .cs1info {
-    padding-right: 2em;
-  }
-  .cs2info {
-    padding-left: 2em;
-  }
 }
 
 @media(min-width: 1050px) {
@@ -303,44 +302,54 @@ ul li:hover {
     grid-column-gap: 0em;
     grid-row-gap: 6em;
     grid-template-columns: 1fr 480px 480px 1fr;
-  }
-  .cs0 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding: 0;
+    grid-template-rows: 1fr 1fr;
   }
   .cs1 {
     grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 0;
+    grid-row: 1/2;
+    padding-top: 0;
   }
   .cs2 {
     grid-column: 3/4;
-    grid-row: 3/4;
-    padding: 0;
+    grid-row: 2/3;
+    padding-top: 0;
   }
-  .cs0info {
+  .cs3 {
     grid-column: 2/3;
-    grid-row: 1/2;
-    padding-left: 5em;
+    grid-row: 3/4;
+    padding-top: 0;
+  }
+  .cs4 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    padding-top: 0;
   }
   .cs1info {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 1/2;
     padding-right: 5em;
+    border-bottom: 0px solid white;
   }
   .cs2info {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     padding-left: 5em;
+    border-bottom: 0px solid white;
   }
-  .cs1info h2 {
-    text-align: left;
+  .cs3info {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding-right: 5em;
+    border-bottom: 0px solid white;
   }
-  .cs0info h2, .cs2info h2 {
-    text-align: right;
+  .cs4info {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding-left: 5em;
+    border-bottom: 0px solid white;
   }
-  .cs0info p, .cs2info p {
+
+  .cs2info h2, .cs4info h2, .cs2info p, .cs4info p {
     text-align: right;
   }
 
