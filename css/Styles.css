@@ -221,7 +221,7 @@ ul li:hover {
 .cs2 img, .cs3 img, .cs4 img {
   padding-top: 2em;
 }
-.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs3 img:hover {
+.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs4 img:hover {
   transform: scale(1.1);
   transition: .2s;
   z-index: 100;
