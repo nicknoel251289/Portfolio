@@ -211,31 +211,31 @@ ul li:hover {
 #section-1 h1 {
   padding: 2em 0 .5em 0;
 }
-.cs1, .cs2, .cs3, .cs4 {
+.cs1, .cs2, .cs3, .cs4, .cs5 {
   z-index: 100;
 }
-.cs1 img, .cs2 img, .cs3 img, .cs4 img {
+.cs1 img, .cs2 img, .cs3 img, .cs4 img, .cs5 img {
   transition: .2s;
   z-index: 100;
 }
-.cs2 img, .cs3 img, .cs4 img {
+.cs2 img, .cs3 img, .cs4 img, .cs5 img {
   padding-top: 2em;
 }
-.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs4 img:hover {
+.cs1 img:hover, .cs2 img:hover, .cs3 img:hover, .cs4 img:hover, .cs5 img:hover {
   transform: scale(1.1);
   transition: .2s;
   z-index: 100;
 }
-.cs1info, .cs2info, .cs3info, .cs4info {
+.cs1info, .cs2info, .cs3info, .cs4info, .cs5info {
   border-bottom: 1px solid #555;
   z-index: 300;
 }
-.cs1info h2, .cs2info h2, .cs3info h2, .cs4info h2 {
+.cs1info h2, .cs2info h2, .cs3info h2, .cs4info h2, .cs5info h2 {
   color: #555;
   z-index: 300;
   padding: .5em 0;
 }
-.cs1p, .cs2p, .cs3p, .cs4p {
+.cs1p, .cs2p, .cs3p, .cs4p, .cs5p {
   padding-bottom: 1.5em;
 }
 
@@ -393,6 +393,12 @@ ul li:hover {
     padding-top: 0;
     align-self: center;
   }
+  .cs5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    padding-top: 0;
+    align-self: center;
+  }
   .cs1info {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -413,8 +419,13 @@ ul li:hover {
     grid-row: 4/5;
     border-bottom: 0px solid white;
   }
+  .cs5info {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    border-bottom: 0px solid white;
+  }
 
-  .cs1info h2, .cs3info h2 {
+  .cs1info h2, .cs3info h2, .cs5info h2 {
     grid-column: 3/4;
     text-align: left;
     padding: 0;
@@ -424,14 +435,14 @@ ul li:hover {
     text-align: left;
     padding: 0;
   }
-  .cs1info p, .cs2info p, .cs3info p, .cs4info p {
+  .cs1info p, .cs2info p, .cs3info p, .cs4info p, .cs5info p {
     text-align: left;
     z-index: 300;
   }
-  .cs1 img, .cs2 img, .cs3 img, .cs4 img {
+  .cs1 img, .cs2 img, .cs3 img, .cs4 img, .cs5 img {
     padding: 0;
   }
-  .cs1p, .cs2p, .cs3p, .cs4p {
+  .cs1p, .cs2p, .cs3p, .cs4p, .cs5p {
     padding-bottom: 0;
   }
 
@@ -613,6 +624,11 @@ ul li:hover {
     grid-row: 4/5;
     padding-top: 0;
   }
+  .cs5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    padding-top: 0;
+  }
   .cs1info {
     grid-column: 3/4;
     grid-row: 1/2;
@@ -634,6 +650,12 @@ ul li:hover {
   .cs4info {
     grid-column: 2/3;
     grid-row: 4/5;
+    padding-left: 5em;
+    border-bottom: 0px solid white;
+  }
+  .cs5info {
+    grid-column: 3/4;
+    grid-row: 5/6;
     padding-left: 5em;
     border-bottom: 0px solid white;
   }
