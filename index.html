@@ -1,188 +1,270 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nick Noel's really cool stuff</title>
-    <link rel="shortcut icon" type="image/png" href="Pictures/tabicon2.png"/>
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="css/Styles.css">
-    <link rel="stylesheet" href="css/Fancybox.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Anton|Leckerli+One|Montserrat+Alternates:700|Lobster|Playfair+Display:700,900|Sedgwick+Ave+Display|Cantarell|Bevan|Playfair+Display:400,700,900|Changa+One|Nunito:300|Passion+One|Pontano+Sans|Raleway:800|Roboto:700|Roboto:300|Titillium+Web:300|Alfa+Slab+One|Ubuntu|Hind|Permanent+Marker|Fjalla+One|IBM+Plex+Mono:700|Righteous|Titan+One" rel="stylesheet">
+    <title>Nick Noel's Portfolio</title>
 
-    <!--Font Awesome -->
-    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Nick Noel's Portfolio" content="Portfolio, Nick Noel, UX, UI, Design, UX Design"><!--DO I NEED THIS?!-->
+
+    <link rel="stylesheet" href="css/styles_TEST.css">
 
     <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="jquery.fancybox.min.js"></script>
-    <link href="jquery.fancybox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-    <script type="text/javascript">
-    	$("[data-fancybox]").fancybox({
-    		protect: true
-    	});
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- JS links -->
-    <script src="Scripts/index.js"></script>
+    <!-- JAVASCRIPT LINK -->
+    <script src="js/scripts_TEST.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115488770-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Kodchasan:300,400,500,600,700|Poppins:300,400,500,600,700,800,900|Quicksand:300,500,700|Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
 
-      gtag('config', 'UA-115488770-1');
-    </script>
+    <!--Font Awesome
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">-->
+
   </head>
 
-  <nav>
-    <div class="toggle">
-      <div class="menu"><i class="fas fa-bars"></i></div>
+<body>
+
+  <section id="section_1">
+
+    <!--<div id="back_button">BACK</div>-->
+    <div class="logo_container">
+      <object>
+        <embed id="nnlogo" src="pictures/logo.svg">
+      </object>
     </div>
-    <ul><!--TRY MAKING THIS A DIV NAV BAR USING GRID-->
-      <li><a href="#header" class="btn">Home</a></li>
-      <li><a href="caseStudies.html">Case Studies</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
-  </nav>
 
-  <body>
-    <!--header showcase my picture -->
-    <header id="header">
-      <div class="mobileimgcenter"><img class="mobileimg" src="Pictures/Maxxiandnick.jpg" alt="Maxxi and Nick"></div>
-      <img class="desktopimg" src="Pictures/maxxiandnick.png" alt="Maxxi and Nick">
-      <div class="intro">
-          <div class="intro-header">
-            <h2>NICK NOEL</h2>
-            <h1><br /><span><span class="underline">designer</span> developer</span></h1>
-            <p>based out of New England</p>
-            <div class="btn-outline one"><a href="#section-1" class="btn">See my work</a></div>
-          </div>
+
+
+    <div id="left_block">
+      <img id="cartoon_computer" src="pictures/cartoon_computer.png">
+    </div>
+
+    <a id="right-tab" href="#section_1"><div id="right-tab-div">UX</div></a>
+
+    <div id="right_block">
+      <img id="code_computer" src="pictures/code_computer.png">
+    </div>
+
+    <a id="left-tab" href="#section_1"><div id="left-tab-div">ART</div></a>
+
+    <div class="button_container">
+      <div id="view_button" class="button"><a>VIEW</a></div>
+      <div id="work_button" class="button"><a>WORK</a></div>
+      <a id="artwork_auto_scroll" class="button" href="#section_2">VIEW ARTWORK</a>
+      <a id="case_studies_auto_scroll" class="button" href="#section_3">VIEW CASE STUDIES</a>
+    </div>
+
+  </section>
+
+  <section id="section_2">
+
+    <div id="info_container">
+      <h1 class="h1_artwork">Art Work</h1>
+
+      <div id="art_info">
+        <h3>History</h3>
+        <p>
+          My journey is a long one, but whose isn’t. I’ll start by saying, I LOVE drawing! I’m pretty sure
+          I popped out with a pad and pen in my hands. Growing up, I was constantly drawing. Whether it was
+          random doodles or the trendiest Pokémon, I couldn’t put the pencil down. In 2014 I graduated with
+          a bachelors in fine arts and still continue to create art.
+        </p>
       </div>
-    </header>
 
-    <main id="main">
+      <div id="art_block">
+        <img src="pictures/womanCharcoal.jpg" alt="charcoal_skull">
+      </div>
 
-      <!-- Section 1 / CASE STUDIES -->
-      <section id="section-1">
-        <h1>Featured Case Studies</h1>
-        <div class="case-studies-container">
-          <div class="cs1">
-            <a href="ffCaseStudy.html"><img src="Pictures/fitformlaptop.png" alt="fitform"></a>
-          </div>
-            <div class="cs1info">
-              <h2>FitForm</h2>
-              <p class="cs1p">A fitness app aimed to help gym goers and non-gym goers maintain a functional and mobile life.</p>
+      <a id="artwork_auto_scroll_2" class="button" href="#section_4">VIEW ARTWORK</a>
+    </div>
+
+    <div id="middle_block"></div>
+
+  </section>
+
+  <section id="section_3">
+    <div>
+    </div>
+  </section>
+
+  <section id="section_4"><!-- ===section-1art-->
+
+    <div id="filter">
+      <!--<label for='charcoal_filter' class="filter_button" id='charcoal_button'><input class='filter' name='medium_type' type='checkbox' id="charcoal_filter">Charcoal</label>-->
+      <label for='charcoal_filter' class="filter_button" id='charcoal_button'>Charcoal</label>
+      <label for='pencil_filter' class="filter_button" id='pencil_button'>Pencil</label>
+      <label for='logo_filter' class="filter_button" id='logo_button'>Logos</label>
+      <label for='mockup_filter' class="filter_button" id='mockup_button'>Mockups</label>
+      <label for='graphic_filter' class="filter_button" id='graphic_button'>Graphics</label>
+      <label for='misc_filter' class="filter_button" id='misc_button'>Misc</label>
+    </div>
+
+    <div class="art fade" id="art"><!-- art === columns-->
+
+      <div class="card charcoal" id="charcoal"><!-- card === grid-->
+        <div class="img_container">
+          <img src="pictures/woman_drawing.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card charcoal" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/charcoal_skull.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card logo" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/boxingGloves.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card charcoal" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/knightDrawing.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card graphic" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/torsoDrawing.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card charcoal" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/womanCharcoal.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+      <div class="card pencil" id="pencil">
+        <div class="img_container">
+          <img src="pictures/eye1TN.jpg" alt="pencil drawing">
+        </div>
+      </div>
+
+      <div class="card charcoal" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/womanBack.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card pencil" id="pencil">
+        <div class="img_container">
+          <img src="pictures/nadineDrawing.jpg" alt="pencil drawing">
+        </div>
+      </div>
+
+      <div class="card charcoal" id="charcoal">
+        <div class="img_container">
+          <img src="pictures/maryDrawing.jpg" alt="charcoal drawing">
+        </div>
+      </div>
+
+      <div class="card mockup" id="mockup">
+        <div class="img_container">
+          <img src="pictures/ff-redesign.jpg" alt="FitForm Landing Page Mockup">
+        </div>
+      </div>
+
+      <div class="card mockup" id="mockup">
+        <div class="img_container">
+          <img src="pictures/sperling.jpg" alt="Sperling Landing Page Mockup">
+        </div>
+      </div>
+
+    </div>
+
+    </section>
+
+    <section id="section_5">
+
+      <h1>Projects</h1>
+
+      <div class="case_studies-container fade">
+
+        <div class="project-card" id="project-1">
+          <a href="fitform.html" target="_blank">
+            <div class="image-container">
+              <img src="pictures/fitform-homepage.png" alt="FitForm UX Project">
+              <div class="pro-info-container">
+                <h2>FitForm Landing Page</h2>
+                <h4>UX Project</h4>
+                <p>
+                  A fitness app aimed to help gym goers and non-gym goers maintain
+                  a functional and mobile life.
+                </p>
+              </div>
             </div>
-          <div class="cs2">
-            <a href="pbnCaseStudy.html"><img src="Pictures/pbnlaptop.png" alt="pbn"></a>
-          </div>
-          <div class="cs2info">
-            <h2>PbNation</h2>
-            <p class="cs2p">It sees more traffic than all other forms of paintball media combined. PbNation is the worlds most visited paintball forum for reviews, events, consumer-to-consumer sales, and more.</p>
-          </div>
-          <div class="cs3">
-            <a href="wow_picker.html"><img src="Pictures/wow_picker.jpg" alt="wow_picker"></a>
-          </div>
-          <div class="cs3info">
-            <h2>WoW Class Picker</h2>
-            <p class="cs3p">Specifically created for the famous MMORPG World of Warcraft. This is a class picker for the indecisive and a mini front-end project.</p>
-          </div>
-          <div class="cs4">
-            <a href="https://nicknoel251289.github.io/portfolio-2.0/"><img src="Pictures/construction.jpg" alt="wow_picker"></a>
-          </div>
-          <div class="cs4info">
-            <h2>New Portfolio Site</h2>
-            <p class="cs3p">Being constructed: See as I build my way through my new portfolio site focusing on jQuery and CSS animations.</p>
-          </div>
-          <div class="cs5">
-            <a href="sperling.html"><img src="Pictures/sperling.jpg" alt="Sperling Interactive"></a>
-          </div>
-          <div class="cs5info">
-            <h2>Sperling Interactive</h2>
-            <p class="cs5p">Mini project: Having fun with Adobe XD and vanilla JavaScript.</p>
-          </div>
+          </a>
         </div>
-        <div class="see-more-button"><a href="caseStudies.html" class="see-more-anchor">See more!</a></div>
-      </section>
 
-      <!-- Section 2 / ARTWORK -->
-      <section id="section-2">
-          <h1 class="art_title">Artwork</h1>
-          <p>
-            I've always been addicted to art. It's been an off and on stuggle to continue to do it with the busy life I have.
-            While at the University of Hawai'i, I ended up picking up pottery and absolutely fell in love with it. It is a dream to eventually have a studio
-            for it in my house. Most of my art is handed away as presents or gifts.
-          </p>
-
-          <div class="art-grid">
-              <!-- <img class="expand" src="Pictures/arrow-expand-all.svg" alt="icon">-->
-              <a class ="pic1" href="Pictures/katieBete.jpg" data-fancybox="group" data-caption="Charcoal, 2013">
-                <img class="pic11" src="Pictures/katieBete.jpg" alt="2013, Summer">
-              </a>
-              <a class ="pic2" href="Pictures/skullCharcoal.jpg" data-fancybox="group" data-caption="Charcoal Skull 2014">
-                <img class="pic22" src="Pictures/skullCharcoal2.jpg" alt="2013, Summer">
-              </a>
-          </div>
-          <div class="see-more-button"><a href="art.html" class="see-more-anchor" >See more!</a></div>
-
-      </section>
-
-      <!-- Section 3 / WHO AM I?!-->
-      <section id="section-3">
-          <h1>Who is Nick!?</h1>
-            <p>
-              With a <b>bachelor's degree in fine arts</b>, drawing has been a part of of my life like my right arm has. After
-              discovering that UI/UX design incorporated all of my passions, I deciding to make a career out of
-              it. Self-teaching frontend development was like playing with Lego's to me. Upon playing with my virtual Legos, I discovered the <b>UI/UX Design
-              track at BLOC</b>. While completing the course, I also obtained my NASM-CPT to become a personal
-              trainer to supplement income. As much as I enjoy personal training, the UI and UX field is where
-              my passions are. I get an apprehensive feeling of missing out when I am not trying further myself learning
-              more about UX, crafting a drawing, or working on a project. UX consumes me like art has and I am truley eager
-              to start my career.
-          </p>
-          <div class="see-more-button"><a href="about.html" class="see-more-anchor" >See more!</a></div>
-      </section>
-
-      <!-- section 4 / Don't be shy (CONTACT INFO) -->
-      <section id="section-4"class="grid">
-        <div class="box">
-          <h1 class="content-title">Don't Be Shy!</h1>
-          <p>If I caught your fancy, send me a message!</p>
-          <div class="see-more-button"><a href="contact.html" class="see-more-anchor" >Contact me!</a></div>
+        <div class="project-card" id="project-2">
+          <a href="sperling.html" target="_blank">
+            <div class="image-container">
+              <img src="pictures/sperling-project.jpg" alt="Sperling Front-end Web Project">
+              <div class="pro-info-container">
+                <h2>Sperling Landing Page</h2>
+                <h4>Front-end Web Project</h4>
+                <p>
+                  Sperling Interactive is your source for everything photography, multimedia, web
+                  design and more.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-        <!--<div class="box">
-          <h1 class="content-title myFamily">Family!</h1>
-          <div class="family">
-            <img src="Pictures/cupcake.png" alt="fitform">
-            <img src="Pictures/maxxi.png" alt="fitform">
-            <img src="Pictures/kate.jpg" alt="fitform">
-            <img src="Pictures/chewy.png" alt="fitform">
-          </div>
-          <div class="members">
-            <div>Cupcake</div>
-            <div>Maxxi</div>
-            <div>Kate</div>
-            <div>Chewy</div>
-          </div>
-        </div>-->
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="grid">
-      <div>Projects by Nick Noel aka God Almighty</div>
-      <div>Facebook <a href="https://www.facebook.com/nick.noel.89" target="_blank"><b>Nick Noel</b></a></div>
-    </footer>
-  </body>
+        <div class="project-card" id="project-3">
+          <a href="pbnation.html" target="_blank">
+            <div class="image-container">
+              <img src="pictures/pbnation-home.png" alt="PBNation UX Project">
+              <div class="pro-info-container">
+                <h2>PB Nation</h2>
+                <h4>UX Project</h4>
+                <p>
+                  PbNation is the worlds most visited paintball forum for reviews, events,
+                  consumer-to-consumer sales, and more.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card" id="project-4">
+          <a href="#" target="_blank">
+            <div class="image-container">
+              <img src="pictures/google-trips.png" alt="Google Trips UX Project">
+              <div class="pro-info-container">
+                <h2>Google Trips</h2>
+                <h4>UX Project | <span>In Progress</span></h4>
+                <p>
+                  Google Trips is a trip planner mobile app developed by Google for the
+                  Android and iOS operating systems.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card" id="project-5">
+          <a href="wow.html" target="_blank">
+            <div class="image-container">
+              <img src="pictures/wow-class-picker.jpg" alt="WoW Front-end Web Project">
+              <div class="pro-info-container">
+                <h2>Worlf of Warcraft</h2>
+                <h4>Front-end Web Project</h4>
+                <p>
+                  World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard Entertainment.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+</body>
 
 </html>
